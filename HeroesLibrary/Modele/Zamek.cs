@@ -69,7 +69,8 @@ namespace HeroesLibrary.Modele
             return Infrastruktura
                 .Where(b => b.CzyWybudowany)
                 .Select(b => b.Rekrutuj())
-                .OrderBy(j => j.Poziom);
+                .OrderBy(j => j.Poziom)
+                .ThenBy(j => j.Koszt.Zloto);
         }
     }
 }
