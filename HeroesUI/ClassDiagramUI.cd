@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HeroesUI.FormBohater">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAEAACAAAEAACACAEEACAAgAAAQAAAAAAEAIAAA=</HashCode>
+      <FileName>FormBohater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeroesUI.FormMapa">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQADAACCCQACAAgAQCgAACCAQAgAoUACAAAgAQAAAA=</HashCode>
+      <FileName>FormMapa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeroesUI.FormZamek">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgBBAEEGCICQBQaLIDAAQACoAgACgIAYBAKAKIBAoA=</HashCode>
+      <FileName>FormZamek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
