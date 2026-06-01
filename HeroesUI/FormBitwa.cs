@@ -34,7 +34,7 @@ namespace HeroesUI
         {
             InitializeComponent();
             this.Text = $"Bitwa! {atakujacy.Imie} vs {obronca.Imie}";
-            this.Size = new Size(950, 750);
+            
             this.StartPosition = FormStartPosition.CenterScreen;
 
             graczAtakujacy = atakujacy;
@@ -232,13 +232,13 @@ namespace HeroesUI
                             {
                                 if (polaBitwy[sprawdzanyX, sprawdzanyY].Tag == null)
                                 {
-                                    int dystansZPosilkow = Math.Max(Math.Abs(sprawdzanyX - aktywny.X), Math.Abs(sprawdzanyY - aktywny.Y));
+                                    int dystansDoCelu = Math.Max(Math.Abs(sprawdzanyX - aktywny.X), Math.Abs(sprawdzanyY - aktywny.Y));
 
-                                    if (dystansZPosilkow <= aktywny.Wojsko.Szybkosc)
+                                    if (dystansDoCelu <= aktywny.Wojsko.Szybkosc)
                                     {
-                                        if (dystansZPosilkow < najkrotszyWymaganyRuch)
+                                        if (dystansDoCelu < najkrotszyWymaganyRuch)
                                         {
-                                            najkrotszyWymaganyRuch = dystansZPosilkow;
+                                            najkrotszyWymaganyRuch = dystansDoCelu;
                                             docelowePole = new Point(sprawdzanyX, sprawdzanyY);
                                         }
                                     }

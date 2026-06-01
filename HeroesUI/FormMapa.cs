@@ -184,7 +184,7 @@ namespace HeroesUI
 
         private void OdswiezPrzyciskiKopalni()
         {
-            AktualizujTekstPrzycisku("kopalniaZlota", obiektKopalniaZlota1, "");
+            AktualizujTekstPrzycisku("kopalniaZlota", obiektKopalniaZlota1,"");
             AktualizujTekstPrzycisku("kopalniaDrewna", obiektKopalniaDrewna1, "");
             AktualizujTekstPrzycisku("kopalniaRudy", obiektKopalniaRudy1, "");
 
@@ -613,8 +613,8 @@ namespace HeroesUI
                             $"- Drewno: +{zamekDrewno}\n" +
                             $"- Ruda: +{zamekRuda}\n\n" +
                             $"LACZNIE DOSTARCZONO DO SKARBCA:\n" +
-                            $"- Zloto: +{sumaZloto} | Drewno: +{sumaDrewno} | Ruda: +{sumaRuda}\n\n" +
-                            $"Teraz przekaz myszke odpowiedniemu graczowi!";
+                            $"- Zloto: +{sumaZloto} | Drewno: +{sumaDrewno} | Ruda: +{sumaRuda}\n\n";
+                        
 
             MessageBox.Show(raport, "Zmiana Tury - Raport Gospodarczy", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
