@@ -6,8 +6,10 @@ namespace HeroesLibrary.Modele
 {
     public abstract class Zamek
     {
-        public Zasoby Skarbiec { get; protected set; }
+        public Zasoby Skarbiec { get; set; }
         public List<Budynek> Infrastruktura { get; protected set; }
+
+        public Zasoby Przychod { get; protected set; }
 
         public event Action<Zasoby> SurowceZmienione;
 
@@ -15,7 +17,12 @@ namespace HeroesLibrary.Modele
         {
             Skarbiec = new Zasoby(5000, 20, 20);
             Infrastruktura = new List<Budynek>();
+            Przychod = new Zasoby(1000, 2, 2);
+
+            InicjalizujInfrastrukture();
         }
+
+        protected virtual void InicjalizujInfrastrukture() { }
 
         public void DodajSurowce(int zloto, int drewno, int ruda)
         {
@@ -24,6 +31,7 @@ namespace HeroesLibrary.Modele
             Skarbiec.Ruda += ruda;
             SurowceZmienione?.Invoke(Skarbiec);
         }
+
         public void KupJednostke(Jednostka jednostkaDoKupienia, Bohater kupujacy)
         {
             if (Skarbiec.Zloto < jednostkaDoKupienia.Koszt.Zloto || Skarbiec.Drewno < jednostkaDoKupienia.Koszt.Drewno || Skarbiec.Ruda < jednostkaDoKupienia.Koszt.Ruda)
@@ -31,7 +39,7 @@ namespace HeroesLibrary.Modele
                 throw new BrakSurowcowException("Brakuje surowców na rekrutację jednostki!");
             }
 
-            kupujacy.DodajDoArmii(jednostkaDoKupienia.Klonuj()); 
+            kupujacy.DodajDoArmii(jednostkaDoKupienia.Klonuj());
 
             Skarbiec.Zloto -= jednostkaDoKupienia.Koszt.Zloto;
             Skarbiec.Drewno -= jednostkaDoKupienia.Koszt.Drewno;
@@ -39,17 +47,18 @@ namespace HeroesLibrary.Modele
 
             SurowceZmienione?.Invoke(Skarbiec);
         }
+
         public void Wybuduj(Budynek budynek)
         {
             if (budynek.CzyWybudowany)
                 throw new InvalidOperationException("Ten budynek jest już wybudowany!");
 
-            if (budynek.WymaganyBudynek != null)
+            if (!string.IsNullOrEmpty(budynek.WymaganyBudynek))
             {
-                var wymagany = Infrastruktura.FirstOrDefault(b => b.GetType() == budynek.WymaganyBudynek);
+                var wymagany = Infrastruktura.FirstOrDefault(b => b.Nazwa == budynek.WymaganyBudynek);
                 if (wymagany == null || !wymagany.CzyWybudowany)
                 {
-                    throw new InvalidOperationException($"Zanim to zbudujesz, musisz wybudować: {wymagany?.Nazwa ?? budynek.WymaganyBudynek.Name}!");
+                    throw new InvalidOperationException($"Zanim to zbudujesz, musisz wybudować: {budynek.WymaganyBudynek}!");
                 }
             }
 
@@ -67,7 +76,7 @@ namespace HeroesLibrary.Modele
         public IEnumerable<Jednostka> PobierzDostepneDoKupienia()
         {
             return Infrastruktura
-                .Where(b => b.CzyWybudowany)
+                .Where(b => b.CzyWybudowany && b.Rekrutuj() != null) 
                 .Select(b => b.Rekrutuj())
                 .OrderBy(j => j.Poziom)
                 .ThenBy(j => j.Koszt.Zloto);

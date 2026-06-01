@@ -57,6 +57,7 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
+            Ilosc = new TextBox();
             ((System.ComponentModel.ISupportInitialize)picBoxTloZamku).BeginInit();
             SuspendLayout();
             // 
@@ -85,7 +86,7 @@
             // ruda
             // 
             ruda.AutoSize = true;
-            ruda.Location = new Point(378, 697);
+            ruda.Location = new Point(384, 747);
             ruda.Name = "ruda";
             ruda.Size = new Size(46, 20);
             ruda.TabIndex = 8;
@@ -94,7 +95,7 @@
             // drewno
             // 
             drewno.AutoSize = true;
-            drewno.Location = new Point(191, 697);
+            drewno.Location = new Point(197, 747);
             drewno.Name = "drewno";
             drewno.Size = new Size(64, 20);
             drewno.TabIndex = 7;
@@ -103,7 +104,7 @@
             // zloto
             // 
             zloto.AutoSize = true;
-            zloto.Location = new Point(557, 697);
+            zloto.Location = new Point(563, 747);
             zloto.Name = "zloto";
             zloto.Size = new Size(48, 20);
             zloto.TabIndex = 6;
@@ -111,7 +112,7 @@
             // 
             // back
             // 
-            back.Location = new Point(6, 658);
+            back.Location = new Point(12, 708);
             back.Name = "back";
             back.Size = new Size(133, 64);
             back.TabIndex = 12;
@@ -252,14 +253,14 @@
             // listBoxRekrutacja
             // 
             listBoxRekrutacja.FormattingEnabled = true;
-            listBoxRekrutacja.Location = new Point(423, 460);
+            listBoxRekrutacja.Location = new Point(422, 484);
             listBoxRekrutacja.Name = "listBoxRekrutacja";
             listBoxRekrutacja.Size = new Size(365, 164);
             listBoxRekrutacja.TabIndex = 26;
             // 
             // btnRekrutuj
             // 
-            btnRekrutuj.Location = new Point(639, 630);
+            btnRekrutuj.Location = new Point(639, 654);
             btnRekrutuj.Name = "btnRekrutuj";
             btnRekrutuj.Size = new Size(149, 55);
             btnRekrutuj.TabIndex = 27;
@@ -330,11 +331,21 @@
             label7.TabIndex = 34;
             label7.Text = "------>";
             // 
+            // Ilosc
+            // 
+            Ilosc.Location = new Point(422, 668);
+            Ilosc.Name = "Ilosc";
+            Ilosc.PlaceholderText = "Ilu rekrutujemy?";
+            Ilosc.Size = new Size(196, 27);
+            Ilosc.TabIndex = 0;
+            // 
             // FormZamek
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(802, 735);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(802, 786);
+            Controls.Add(Ilosc);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -400,5 +411,6 @@
         private Label label5;
         private Label label6;
         private Label label7;
+        private TextBox Ilosc;
     }
 }

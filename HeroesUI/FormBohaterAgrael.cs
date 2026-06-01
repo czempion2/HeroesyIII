@@ -1,14 +1,21 @@
 ﻿using HeroesLibrary.Modele;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HeroesUI
 {
-    public partial class FormBohater : Form
+    public partial class FormBohaterAgrael : Form
     {
         private Bohater bohater;
 
-        public FormBohater(Bohater przekazanyBohater)
+        public FormBohaterAgrael(Bohater przekazanyBohater)
         {
             InitializeComponent();
             bohater = przekazanyBohater;
@@ -20,7 +27,7 @@ namespace HeroesUI
 
         private void WczytajDane()
         {
-            lblStatystyki.Text = $"Imię: {bohater.Imie}\n" +
+            lblStatystyki.Text = $"Imię: {bohater.Imie}\n\n" +
                                  $"Poziom: {bohater.PoziomBohatera}\n\n" +
                                  $"Atak: {bohater.Atak}\n" +
                                  $"Obrona: {bohater.Obrona}\n" +
@@ -46,14 +53,14 @@ namespace HeroesUI
         {
             if (listBoxArmia.SelectedIndex == -1)
             {
-                MessageBox.Show("Mój Panie, najpierw wskaż oddział, który chcesz zwolnić ze służby!", "Brak wyboru", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Wybierz oddział, który chcesz zwolnić ze służby!", "Brak wyboru", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
             int zaznaczonyIndeks = listBoxArmia.SelectedIndex;
 
             DialogResult decyzja = MessageBox.Show(
-                "Czy na pewno chcesz rozwiązać ten oddział i odesłać go do domu? Tej decyzji nie można cofnąć.",
+                "Czy na pewno chcesz rozwiązać ten oddział i odesłać go do domu?",
                 "Zwolnienie ze służby",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
@@ -61,7 +68,7 @@ namespace HeroesUI
             if (decyzja == DialogResult.Yes)
             {
                 bohater.UsunZArmii(zaznaczonyIndeks);
-                WczytajDane(); 
+                WczytajDane();
             }
         }
     }

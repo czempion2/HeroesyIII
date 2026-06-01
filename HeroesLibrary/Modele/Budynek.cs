@@ -2,14 +2,30 @@
 
 namespace HeroesLibrary.Modele
 {
-    public abstract class Budynek
+    public class Budynek
     {
-        public string Nazwa { get; protected set; }
-        public Zasoby KosztBudowy { get; protected set; }
+        public string Nazwa { get; set; }
+        public Zasoby KosztBudowy { get; set; }
         public bool CzyWybudowany { get; set; }
-        public Type WymaganyBudynek { get; protected set; }
 
-        public abstract Jednostka Rekrutuj();
+        public string WymaganyBudynek { get; set; }
+
+        public Jednostka RekrutowanaJednostka { get; set; }
+
+        public Budynek(string nazwa, Zasoby kosztBudowy, string wymaganyBudynek = null, Jednostka rekrutowanaJednostka = null)
+        {
+            Nazwa = nazwa;
+            KosztBudowy = kosztBudowy;
+            WymaganyBudynek = wymaganyBudynek;
+            RekrutowanaJednostka = rekrutowanaJednostka;
+            CzyWybudowany = false;
+        }
+
+        public Jednostka Rekrutuj()
+        {
+            return RekrutowanaJednostka;
+        }
+
         public override string ToString() => $"{Nazwa}";
     }
 }

@@ -3,21 +3,21 @@
   <Class Name="HeroesLibrary.Modele.Bohater" Collapsed="true">
     <Position X="2.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIEAAAAAAAAABAEQAEAAGAAAQAQAAQAAAAQAAAAAAAA=</HashCode>
+      <HashCode>AIEAAAAgAAAABAEQAEAAGAAAQAQAAQAAAAQAAAAAAAA=</HashCode>
       <FileName>Modele\Bohater.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="HeroesLibrary.Modele.Budynek" Collapsed="true">
-    <Position X="10" Y="1.5" Width="1.5" />
+    <Position X="2.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>gAgAAAAAAAAAAAAEAAAAAAAIAAAAAAAAIAAgAAAAAAA=</HashCode>
+      <HashCode>gAgAAAAAAAAAAAAEAAAAAAAIBAAAAAAAIAAgAAAAAAA=</HashCode>
       <FileName>Modele\Budynek.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="HeroesLibrary.Modele.Jednostka" Collapsed="true">
-    <Position X="5.25" Y="1.5" Width="1.5" />
+    <Position X="5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAIAAAAEAAEAEBAEAAAAAAIAAAAAgAgAAAAAAA=</HashCode>
+      <HashCode>AIAEAgAIAAAAEAAEAMBAEAIAABAIAAAAAgAgBAAAAAA=</HashCode>
       <FileName>Modele\Jednostka.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -29,242 +29,67 @@
     </TypeIdentifier>
   </Class>
   <Class Name="HeroesLibrary.Modele.Zamek" Collapsed="true">
-    <Position X="0.75" Y="3.5" Width="1.5" />
+    <Position X="1.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAIAAAAAAQAAAAAAAAAAAQAAACCQA=</HashCode>
+      <HashCode>ABAAAAAAAAAAAAAAIAAAAAAQCAAAAAAAAAAQAAACCQA=</HashCode>
       <FileName>Modele\Zamek.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="HeroesLibrary.Modele.Zasoby" Collapsed="true">
-    <Position X="1.25" Y="2.25" Width="1.5" />
+    <Position X="0.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAQAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Modele\Zasoby.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.BastionGryfow" Collapsed="true">
-    <Position X="8.75" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\BastionGryfow.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.BastionLucznikow" Collapsed="true">
-    <Position X="11" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\BastionLucznikow.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.BastionMiecznikow" Collapsed="true">
-    <Position X="8.75" Y="7" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\BastionMiecznikow.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.GniazdoGryfow" Collapsed="true">
-    <Position X="8.75" Y="8" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\GniazdoGryfow.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.Klasztor" Collapsed="true">
-    <Position X="8.75" Y="9" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\Klasztor.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.KoszaryZbrojnych" Collapsed="true">
-    <Position X="8.75" Y="10" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\KoszaryZbrojnych.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.PortalChwaly" Collapsed="true">
-    <Position X="11" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\PortalChwaly.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.Posterunek" Collapsed="true">
-    <Position X="8.75" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\Posterunek.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.Sanktuarium" Collapsed="true">
-    <Position X="11" Y="7" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\Sanktuarium.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.Stajnie" Collapsed="true">
-    <Position X="11" Y="8" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\Stajnie.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.Strażnica" Collapsed="true">
-    <Position X="11" Y="9" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\Strażnica.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.Swiatynia" Collapsed="true">
-    <Position X="11" Y="10" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\Swiatynia.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.SzkolkaKawalerii" Collapsed="true">
-    <Position X="8.75" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\SzkolkaKawalerii.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.WiezaLucznikow" Collapsed="true">
-    <Position X="11" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\WiezaLucznikow.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Budynki.ZamekLudzi" Collapsed="true">
-    <Position X="0.75" Y="5.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Budynki\ZamekLudzi.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Aniol" Collapsed="true">
-    <Position X="6.5" Y="6.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Aniol.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Archaniol" Collapsed="true">
-    <Position X="6.5" Y="10" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Archaniol.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Czempion" Collapsed="true">
-    <Position X="4.25" Y="7.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Czempion.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Fanatyk" Collapsed="true">
-    <Position X="4.25" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Fanatyk.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Gryf" Collapsed="true">
-    <Position X="4.25" Y="4.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Gryf.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Halabardnik" Collapsed="true">
-    <Position X="4.25" Y="5.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Halabardnik.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Kawalerzysta" Collapsed="true">
-    <Position X="6.5" Y="5.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Kawalerzysta.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.KrolewskiGryf" Collapsed="true">
-    <Position X="4.25" Y="8.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\KrolewskiGryf.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Krzyzowiec" Collapsed="true">
-    <Position X="6.5" Y="7.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Krzyzowiec.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Kusznik" Collapsed="true">
-    <Position X="6.5" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Kusznik.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Lucznik" Collapsed="true">
-    <Position X="6.5" Y="4.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Lucznik.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Mnich" Collapsed="true">
-    <Position X="4.25" Y="6.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Mnich.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Pikinier" Collapsed="true">
-    <Position X="4.25" Y="10" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Pikinier.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="HeroesLibrary.Przystań.Jednostki.Zbrojny" Collapsed="true">
-    <Position X="6.5" Y="8.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Przystań\Jednostki\Zbrojny.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="HeroesLibrary.Wyjatki.BrakSurowcowException" Collapsed="true">
-    <Position X="0.5" Y="6.5" Width="1.5" />
+    <Position X="5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Wyjatki\BrakSurowcowException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="HeroesLibrary.Wyjatki.PelnaArmiaException" Collapsed="true">
-    <Position X="2.25" Y="6.5" Width="1.5" />
+    <Position X="5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Wyjatki\PelnaArmiaException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="HeroesLibrary.ManagerZapisu" Collapsed="true">
-    <Position X="0.5" Y="8" Width="1.5" />
+    <Position X="5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgEAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>ManagerZapisu.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="HeroesLibrary.Inferno.ZamekInferno" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inferno\ZamekInferno.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeroesLibrary.Przystań.ZamekLudzi" Collapsed="true">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Przystań\ZamekLudzi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeroesLibrary.Modele.Kopalnia" Collapsed="true">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAEAAgABAAAAAAEAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Modele\Kopalnia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="HeroesLibrary.Modele.TypSurowca" Collapsed="true">
+    <Position X="1.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAQAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\Kopalnia.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

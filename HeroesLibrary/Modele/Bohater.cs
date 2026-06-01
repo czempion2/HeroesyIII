@@ -35,9 +35,19 @@ namespace HeroesLibrary.Modele
 
         public void DodajDoArmii(Jednostka jednostka)
         {
-            if (Armia.Count >= 7)
-                throw new PelnaArmiaException($"{Imie} nie ma już miejsca w armii!");
-            Armia.Add(jednostka);
+            var istniejacyOddzial = Armia.FirstOrDefault(j => j.Nazwa == jednostka.Nazwa);
+
+            if (istniejacyOddzial != null)
+            {
+                istniejacyOddzial.Ilosc += jednostka.Ilosc;
+            }
+            else
+            {
+                if (Armia.Count >= 7)
+                    throw new PelnaArmiaException($"{Imie} nie ma już miejsca w armii!");
+
+                Armia.Add(jednostka);
+            }
         }
 
         public void DodajDoswiadczenie(int exp)
@@ -62,5 +72,7 @@ namespace HeroesLibrary.Modele
                 Armia.RemoveAt(indeks);
             }
         }
+
+        public List<Kopalnia> PosiadaneKopalnie { get; set; } = new List<Kopalnia>(); 
     }
 }

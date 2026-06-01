@@ -10,7 +10,7 @@
   <Class Name="HeroesUI.FormMapa">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQQADAACCCQACAAgAQCgAACCAQAgAoUACAAAgAQAAAA=</HashCode>
+      <HashCode>TQgALCACKCQAYIBsFUegAoWaDUAxEoYAEAFggAFQELA=</HashCode>
       <FileName>FormMapa.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -19,6 +19,34 @@
     <TypeIdentifier>
       <HashCode>gAgBBAEEGCICQBQaLIDAAQACoAgACgIAYBAKAKIBAoA=</HashCode>
       <FileName>FormZamek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeroesUI.FormBitwa">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="HeroesUI.FormBitwa.OddzialNaMapie" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FormBitwa.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAANIABQBGoAAAAIABCBQAACAAAAAAAIAgAAAACAAAA=</HashCode>
+      <FileName>FormBitwa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeroesUI.FormBohaterAgrael">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAEAACAAAEAAAACAEEACAAgAAAQAAAAAAGAIAAA=</HashCode>
+      <FileName>FormBohaterAgrael.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeroesUI.FormInferno">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACAVAEEGCAAQDoAAIDAAEACoCgAAgIAECAAAJIBAAA=</HashCode>
+      <FileName>FormInferno.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

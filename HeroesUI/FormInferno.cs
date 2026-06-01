@@ -1,14 +1,16 @@
 ﻿using HeroesLibrary.Modele;
-
+using System;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace HeroesUI
 {
-    public partial class FormZamek : Form
+    public partial class FormInferno : Form
     {
         private Zamek zamek;
         private Bohater goscWZamku;
 
-        public FormZamek(Zamek przekazanyZamek, Bohater bohaterGracza)
+        public FormInferno(Zamek przekazanyZamek, Bohater bohaterGracza)
         {
             InitializeComponent();
 
@@ -18,8 +20,37 @@ namespace HeroesUI
             zamek.SurowceZmienione += OdswiezPasekWZamku;
             OdswiezPasekWZamku(zamek.Skarbiec);
 
+            PodepnijZdarzenia();
+
             ZaktualizujPrzyciskiBudynkow();
             OdswiezListeRekrutacji();
+        }
+
+        private void PodepnijZdarzenia()
+        {
+            back.Click += (s, e) => this.Close();
+            btnRekrutuj.Click += btnRekrutuj_Click;
+
+            btnZbudujUrodzisko.Click += (s, e) => SprobujZbudowac("Urodzisko");
+            btnZbudujUlepszoneUrodzisko.Click += (s, e) => SprobujZbudowac("Ulepszone Urodzisko");
+
+            btnZbudujSaleGrzechu.Click += (s, e) => SprobujZbudowac("Sale grzechu");
+            btnZbudujUlepszoneSaleGrzechu.Click += (s, e) => SprobujZbudowac("Ulepszone Sale grzechu");
+
+            btnZbudujPsiarnia.Click += (s, e) => SprobujZbudowac("Psiarnia");
+            btnZbudujUlepszonaPsiarnia.Click += (s, e) => SprobujZbudowac("Ulepszona Psiarnia");
+
+            btnZbudujWrotaDemonow.Click += (s, e) => SprobujZbudowac("Wrota demonów");
+            btnZbudujUlepszoneWrotaDemonów.Click += (s, e) => SprobujZbudowac("Ulepszone Wrota demonów");
+
+            btnZbudujPrzedsionekPiekieł.Click += (s, e) => SprobujZbudowac("Przedsionek piekieł");
+            btnZbudujUlepszonyPrzedsionekPiekieł.Click += (s, e) => SprobujZbudowac("Ulepszony Przedsionek piekieł");
+
+            btnZbudujJezioroOgnia.Click += (s, e) => SprobujZbudowac("Jezioro ognia");
+            btnZbudujUlepszoneJezioroOgnia.Click += (s, e) => SprobujZbudowac("Ulepszone Jezioro ognia");
+
+            btnZbudujPrzeklętyPałac.Click += (s, e) => SprobujZbudowac("Przeklęty pałac");
+            btnZbudujUlepszonyPrzeklętyPałac.Click += (s, e) => SprobujZbudowac("Ulepszony Przeklęty pałac");
         }
 
         private void OdswiezListeRekrutacji()
@@ -34,28 +65,26 @@ namespace HeroesUI
 
         private void ZaktualizujPrzyciskiBudynkow()
         {
-            AktualizujGuzik(btnZbudujPosterunek, "Posterunek");
-            AktualizujGuzik(btnZbudujStraznica, "Strażnica");
+            AktualizujGuzik(btnZbudujUrodzisko, "Urodzisko");
+            AktualizujGuzik(btnZbudujUlepszoneUrodzisko, "Ulepszone Urodzisko");
 
+            AktualizujGuzik(btnZbudujSaleGrzechu, "Sale grzechu");
+            AktualizujGuzik(btnZbudujUlepszoneSaleGrzechu, "Ulepszone Sale grzechu");
 
-            AktualizujGuzik(btnZbudujWiezaLucznikow, "Wieża Łuczników");
-            AktualizujGuzik(btnZbudujBastionKusznikow, "Bastion Łuczników");
+            AktualizujGuzik(btnZbudujPsiarnia, "Psiarnia");
+            AktualizujGuzik(btnZbudujUlepszonaPsiarnia, "Ulepszona Psiarnia");
 
-            AktualizujGuzik(btnZbudujGniazdoGryfow, "Gniazdo Gryfów");
-            AktualizujGuzik(btnZbudujBastionGryfow, "Bastion Gryfów");
+            AktualizujGuzik(btnZbudujWrotaDemonow, "Wrota demonów");
+            AktualizujGuzik(btnZbudujUlepszoneWrotaDemonów, "Ulepszone Wrota demonów");
 
-            AktualizujGuzik(btnZbudujKoszaryZbrojnych, "Koszary Zbrojnych");
-            AktualizujGuzik(btnZbudujBastionMiecznikow, "Bastion Mieczników");
+            AktualizujGuzik(btnZbudujPrzedsionekPiekieł, "Przedsionek piekieł");
+            AktualizujGuzik(btnZbudujUlepszonyPrzedsionekPiekieł, "Ulepszony Przedsionek piekieł");
 
-            AktualizujGuzik(btnZbudujKlasztor, "Klasztor");
-            AktualizujGuzik(btnZbudujSwiatynia, "Świątynia");
+            AktualizujGuzik(btnZbudujJezioroOgnia, "Jezioro ognia");
+            AktualizujGuzik(btnZbudujUlepszoneJezioroOgnia, "Ulepszone Jezioro ognia");
 
-            AktualizujGuzik(btnZbudujStajnie, "Stajnie");
-            AktualizujGuzik(btnZbudujSzkolaKawalerii, "Szkółka Kawalerii");
-
-
-            AktualizujGuzik(btnZbudujPortalChwaly, "Portal Chwały");
-            AktualizujGuzik(btnZbudujSanktuarium, "Sanktuarium");
+            AktualizujGuzik(btnZbudujPrzeklętyPałac, "Przeklęty pałac");
+            AktualizujGuzik(btnZbudujUlepszonyPrzeklętyPałac, "Ulepszony Przeklęty pałac");
 
             OdswiezListeRekrutacji();
         }
@@ -97,82 +126,6 @@ namespace HeroesUI
             ruda.Text = $"Ruda: {obecneZasoby.Ruda}";
         }
 
-
-        private void btnZbudujStraznica_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Strażnica");
-        }
-
-        private void btnZbudujPosterunek_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Posterunek");
-        }
-
-        private void btnZbudujWiezaLucznikow_Click_1(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Wieża Łuczników");
-        }
-
-        private void btnZbudujBastionKusznikow_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Bastion Łuczników");
-        }
-
-        private void btnZbudujGniazdoGryfow_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Gniazdo Gryfów");
-        }
-
-        private void btnZbudujBastionGryfow_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Bastion Gryfów");
-        }
-
-        private void btnZbudujKoszaryZbrojnych_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Koszary Zbrojnych");
-        }
-
-        private void btnZbudujBastionMiecznikow_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Bastion Mieczników");
-        }
-
-        private void btnZbudujKlasztor_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Klasztor");
-        }
-
-        private void btnZbudujSwiatynia_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Świątynia");
-        }
-
-        private void btnZbudujSzkolaKawalerii_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Szkółka Kawalerii");
-        }
-
-        private void btnZbudujStajnie_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Stajnie");
-        }
-
-        private void btnZbudujPortalChwaly_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Portal Chwały");
-        }
-
-        private void btnZbudujSanktuarium_Click(object sender, EventArgs e)
-        {
-            SprobujZbudowac("Sanktuarium");
-        }
-
-        private void back_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnRekrutuj_Click(object sender, EventArgs e)
         {
             if (listBoxRekrutacja.SelectedItem == null)
@@ -194,7 +147,6 @@ namespace HeroesUI
                 {
                     Jednostka paczkaWojska = wybrana.Klonuj();
                     paczkaWojska.Ilosc = iloscDoKupienia;
-
 
                     paczkaWojska.Koszt = new Zasoby(
                         wybrana.Koszt.Zloto * iloscDoKupienia,
@@ -245,6 +197,5 @@ namespace HeroesUI
                 }
             }
         }
-
     }
 }

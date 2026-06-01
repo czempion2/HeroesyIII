@@ -18,5 +18,9 @@ namespace HeroesLibrary.Modele
             Drewno = drewno;
             Ruda = ruda;
         }
+
+        public Zasoby()
+        {
+        }
     }
 }
